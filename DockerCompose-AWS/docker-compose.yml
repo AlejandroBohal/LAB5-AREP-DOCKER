@@ -1,0 +1,33 @@
+version: '3'
+services:
+  loadbalancer:
+    image: elcostalitoalegre/sparkweblive:loadbalancer
+    depends_on:
+        - web
+    container_name: LoadBalancerAPP
+    ports:
+      - "8091:6000"
+  web:
+    image: elcostalitoalegre/sparkweblive:web
+    depends_on:
+        - database   
+    ports:
+      - "8087-8089:6000"
+  database:
+    image: mongo:latest
+    container_name: mongo-db
+    environment:
+      - MONGO_INITDB_DATABASE=registro-arep
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=aG9sYW11bmRvMTIz
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongo-volume:/data/db
+    ports:
+      - '27017-27019:27017-27019'
+    
+    command: mongod
+volumes:
+  mongodb:
+  mongodb_config:
+
