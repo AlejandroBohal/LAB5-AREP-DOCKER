@@ -21,7 +21,7 @@ These components were contained in the docker-composite which is responsible for
 
 ## Live Demo
 
-![](https://tenor.com/bpY28.gif)
+![](img/gif.gif)
 
 In the following gif we can appreciate a small demo of the web client that is in charge of balancing the load in the different server nodes, this client is deployed in aws in the docker containers.
 
