@@ -1,5 +1,4 @@
-
-# LAB 5 AREP DOCKER + SPARK + AWS + LOAD BALANCING
+# LAB 5 AREP DOCKER + SPARK + AWS + LOAD BALANCING :rocket:
 
 In this repository you will find 4 packages with specific documentation (Readme) about the use of these, in this root package you will find a general specification to the architecture and a demo of the prototype running on AWS Cloud. The virtualization is the future, you know :laughing:
 
@@ -24,7 +23,7 @@ These components were contained in the docker-composite which is responsible for
 
 In the following gif we can appreciate a small demo of the web client that is in charge of balancing the load in the different server nodes, this client is deployed in aws in the docker containers.
 
-![](https://media.discordapp.net/attachments/352624122301513730/758034879853232229/ezgif.com-video-to-gif.gif)
+![](https://media.discordapp.net/attachments/352624122301513730/758038080006389920/ezgif.com-video-to-gif_1.gif)
 
 You can see the complete demonstration of the operation in the following link
 
