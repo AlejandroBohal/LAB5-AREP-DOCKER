@@ -23,7 +23,7 @@ These components were contained in the docker-composite which is responsible for
 
 In the following gif we can appreciate a small demo of the web client that is in charge of balancing the load in the different server nodes, this client is deployed in aws in the docker containers.
 
-![](https://media.discordapp.net/attachments/352624122301513730/758038080006389920/ezgif.com-video-to-gif_1.gif)
+![](https://tenor.com/bpY28.gif)
 
 You can see the complete demonstration of the operation in the following link
 
