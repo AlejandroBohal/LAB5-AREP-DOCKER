@@ -9,6 +9,14 @@ You will find 4 principal packages in this repository.
 - Local compose source: https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/DockerCompose
 - AWS compose source:https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/DockerCompose-AWS
 
+
+This project has continuous integration, both for the client and for the server with Circle ci.
+### Cliente
+[![CircleCI](https://circleci.com/gh/AlejandroBohal/LoadBalancerClient.svg?style=svg)](https://circleci.com/gh/AlejandroBohal/LoadBalancerClient)
+### Servidor
+[![CircleCI](https://circleci.com/gh/AlejandroBohal/ServerRestSpark.svg?style=svg)](https://circleci.com/gh/AlejandroBohal/ServerRestSpark)
+
+
 ## Architecture 
 
 This project is composed of several components located in different layers, the main components are 
