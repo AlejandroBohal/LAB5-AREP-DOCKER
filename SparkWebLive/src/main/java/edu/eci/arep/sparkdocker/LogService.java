@@ -13,7 +13,15 @@ import java.util.Map;
 
 import static spark.Spark.*;
 
+/**
+ * The type Log service.
+ */
 public class LogService {
+    /**
+     * Main.
+     *
+     * @param args the args
+     */
     public static void main(String ... args){
         MessageService messageService = new MessageServiceImpl();
 
@@ -52,6 +60,12 @@ public class LogService {
         }
 
     }
+
+    /**
+     * Gets port.
+     *
+     * @return the port
+     */
     static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));

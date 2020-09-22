@@ -17,6 +17,9 @@ public class DataBaseConnection {
      */
     MongoClientURI uri = new MongoClientURI(
             "mongodb://root:aG9sYW11bmRvMTIz@mongo-db:27017/?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=registro-arep&authMechanism=SCRAM-SHA-256&3t.uriVersion=3");
+    /**
+     * The Mongo client.
+     */
     MongoClient mongoClient = new MongoClient(uri);
     /**
      * The Database.
@@ -36,17 +39,11 @@ public class DataBaseConnection {
         return mongoClient;
     }
 
+
     /**
      * Gets clients.
      *
      * @return the clients
-     */
-
-
-    /**
-     * Get collection mongo collection.
-     *
-     * @return the mongo collection
      */
     public MongoCollection<Document> getCollection(){
         try{

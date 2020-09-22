@@ -14,6 +14,9 @@ import java.text.MessageFormat;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * The type Http client balanced.
+ */
 public class HttpClientBalanced {
 
     private HttpClient httpClient;
@@ -22,6 +25,9 @@ public class HttpClientBalanced {
     private String baseHost = "http://172.17.0.1";
     private String ports[] = {"8087", "8088", "8089"};
 
+    /**
+     * Instantiates a new Http client balanced.
+     */
     public HttpClientBalanced() {
         httpClient = HttpClientBuilder.create().build();
         for(int i=0; i<ports.length;i++){
@@ -30,6 +36,12 @@ public class HttpClientBalanced {
 
     }
 
+    /**
+     * Gets messages.
+     *
+     * @param path the path
+     * @return the messages
+     */
     public String getMessages(String path) {
         try {
             String uri = getServer() + path;
@@ -43,6 +55,13 @@ public class HttpClientBalanced {
         return null;
     }
 
+    /**
+     * Post message string.
+     *
+     * @param message the message
+     * @param path    the path
+     * @return the string
+     */
     public String postMessage(String message, String path) {
         message = message.replace("<","");
         message = message.replace(">","");
@@ -61,6 +80,12 @@ public class HttpClientBalanced {
         }return "";
 
     }
+
+    /**
+     * Get server string.
+     *
+     * @return the string
+     */
     public String getServer(){
         roundRobin();
         return MessageFormat.format("{0}:{1}",baseHost,ports[serverNumber]);

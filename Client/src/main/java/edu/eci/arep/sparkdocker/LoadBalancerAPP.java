@@ -6,7 +6,15 @@ import edu.eci.arep.sparkdocker.WebClient.HttpClientBalanced;
 
 import static spark.Spark.*;
 
+/**
+ * The type Load balancer app.
+ */
 public class LoadBalancerAPP {
+    /**
+     * Main.
+     *
+     * @param args the args
+     */
     public static void main(String ... args){
         HttpClientBalanced clientBalanced = new HttpClientBalanced();
         port(getPort());
@@ -19,6 +27,12 @@ public class LoadBalancerAPP {
         get("/messages",(req,res) -> clientBalanced.getMessages("/messages"));
         post("/messages",(req,res) -> clientBalanced.postMessage(req.body(), "/messages"));
     }
+
+    /**
+     * Gets port.
+     *
+     * @return the port
+     */
     static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
