@@ -113,6 +113,19 @@ And finally we gonna have the same as the local user guide:
     
 in the web live demo you can see the project working.
 
+## ClassDiagram
+
+Server REST class diagram
+
+![](https://media.discordapp.net/attachments/352624122301513730/758062166967582720/Package_sparkdocker.png?width=407&height=468)
+
+Client load balancer class diagram.
+
+![](https://media.discordapp.net/attachments/352624122301513730/758061341381492808/Package_sparkdocker.png)
+
+in the main class spark framework was used.
+
+
 ## Live Demo
 
 ![](img/gif.gif)
@@ -123,7 +136,32 @@ You can see the complete demonstration of the operation in the following link
 
 https://youtu.be/iAMj8_ZNwjg
 
+## Documentation
+
+Documentation of the architecture in Documentation.pdf
+
+https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/blob/master/Documentation.pdf
+
+
+Documentation website javadoc for client:
+https://alejandrobohal.github.io/LoadBalancerClient/
+
+Documentation website javadoc for server:
+https://alejandrobohal.github.io/ServerRestSpark/
+
+## Built With
+
+* [Maven](https://maven.apache.org/) - Dependency Management
+* CircleCI for CI 
+* MongoDb
+* Docker
+* AWS
+* Spark
 
 ## Author 
 
 - Sergio Alejandro Bohorquez Alzate.
+
+## License
+
+This project is licensed under the GNU v3.0 - see the [LICENSE.md](LICENSE.md) file for details
