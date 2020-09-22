@@ -1,11 +1,13 @@
 # LAB 5 AREP DOCKER + SPARK + AWS + LOAD BALANCING :rocket:
 
-In this repository you will find 4 packages with specific documentation (Readme) about the use of these, in this root package you will find a general specification to the architecture and a demo of the prototype running on AWS Cloud. The virtualization is the future, you know :laughing:
+In this repository you will find a solution to LAB 5 Workshop. we learned about virtualization with docker and deploy to AWS, Availability with Load Balancer client and Rest Server. The virtualization is the future, you know :laughing:
 
-- Client information: https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/Client
-- Server information: https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/SparkWebLive
-- Local compose information: https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/DockerCompose
-- AWS compose information:https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/DockerCompose-AWS
+You will find 4 principal packages in this repository.
+
+- Client source: https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/Client
+- Server source: https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/SparkWebLive
+- Local compose source: https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/DockerCompose
+- AWS compose source:https://github.com/AlejandroBohal/LAB5-AREP-DOCKER/tree/master/DockerCompose-AWS
 
 ## Architecture 
 
